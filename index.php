@@ -12,5 +12,5 @@
 
     <body>
         <div id="app"></div>
-    <script type="text/javascript" src="./Title_files/app.bundle.js"></script></body>
+    <script type="text/javascript" src="http://localhost:9080/monetcap/Title_files/app.bundle.js"></script></body>
 </html>
