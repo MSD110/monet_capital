@@ -13492,6 +13492,7 @@
 						n = e.hero_body,
 						a = e.hero_footer_text;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+						id: "pricing",
 						className: "uk-height-1-1 uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-background-norepeat uk-background-cover uk-background-blend-overlay background-test",
 						"data-src": t,
 						width: "1920",
@@ -13561,6 +13562,7 @@
 			type: "button",
 			className: "uk-button uk-button-primary uk-border-rounded"
 		}, "Contact Us")), " "), o.a.createElement("li", null, " ", o.a.createElement("a", {
+			id: "contact",
 			href: "tel:1-800-377-5554"
 		}, o.a.createElement("i", {
 			className: "material-icons uk-margin-small-right uk-text-primary"
@@ -14102,42 +14104,64 @@
 			className: "uk-text-uppercase uk-text-large uk-light uk-margin-bottom"
 		}, "Make more with monet"), o.a.createElement("form", {
 			className: "uk-grid-small uk-text-small uk-margin-top",
+			action: "model.php",
+			method: "post",
+			name: "sign_form",
+			id: "sign_form_id",
 			"data-uk-grid": !0
 		}, o.a.createElement("div", {
 			className: "uk-width-1-4@s"
 		}, o.a.createElement("input", {
+			id: "first_name",
+			name: "first_name",
 			className: "uk-input",
 			type: "text",
+			required: !0,
 			placeholder: "First name"
 		})), o.a.createElement("div", {
 			className: "uk-width-1-4@s"
 		}, o.a.createElement("input", {
+			id: "last_name",
+			name: "last_name",
 			className: "uk-input",
 			type: "text",
+			required: !0,
 			placeholder: "Last name"
 		})), o.a.createElement("div", {
 			className: "uk-width-1-2@s"
 		}, o.a.createElement("input", {
+			id: "phone_number",
+			name: "phone_number",
 			className: "uk-input",
 			type: "text",
+			required: !0,
 			placeholder: "Phone number"
 		})), o.a.createElement("div", {
 			className: "uk-width-1-2@s"
 		}, o.a.createElement("input", {
+			id: "email_address",
+			name: "email_address",
 			className: "uk-input",
-			type: "text",
+			type: "email",
+			required: !0,
 			placeholder: "E-mail address"
 		})), o.a.createElement("div", {
 			className: "uk-width-1-2@s"
 		}, o.a.createElement("input", {
+			id: "business_name",
+			name: "business_name",
 			className: "uk-input",
 			type: "text",
+			required: !0,
 			placeholder: "Business name"
 		})), o.a.createElement("div", {
 			className: "uk-width-1-1@s"
 		}, o.a.createElement("textarea", {
+			id: "message",
+			name: "message",
 			className: "uk-textarea",
 			rows: "4",
+			required: !0,
 			placeholder: "Message"
 		}), o.a.createElement("button", {
 			type: "button",
@@ -14166,8 +14190,10 @@
 		}, o.a.createElement("div", {
 			className: "uk-margin-large"
 		}, o.a.createElement("h1", {
+			id: "about",
 			className: "uk-text-center uk-text-primary"
 		}, "About Us")), o.a.createElement(je, null))), o.a.createElement("div", {
+			id: "section-partners",
 			className: "uk-section uk-section-large uk-background-cover uk-background-norepeat",
 			"data-src": k.a,
 			"data-uk-img": !0
