@@ -96,7 +96,7 @@ if($table == 'request')
   VALUES ('" . $first_name . "', '" . $last_name . "', '" . $phone_number . "', '" . $email_address. "', '" . $business_name . "', '" . $how_much . "', '" . $how_soon. "', '" . $years_business. "', '" . $monthly_revenue. "', '" . $industry . "')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "success";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

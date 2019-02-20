@@ -20,9 +20,16 @@
         e.preventDefault();
         var link = $('#sign_form_id').attr('action');
         $.ajax({url: link, type: "POST", data: $('#sign_form_id').serialize(), success: function(result){
-          alert(result);
-          $('#sign_form_id')[0].reset();
-          //$('body').append('<div id="psf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Submitted</h2><p>Thank you for choosing Monet Capital! We will be in touch within 24 hours. We look forward to partnering with you!</p></div></div>');
+          if(result == 'success'){
+            $('#partners-apply-modal').removeClass('uk-open');
+            $('#partners-apply-modal').hide();
+            $('body').append('<div id="psf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Submitted</h2><p>Thank you for choosing Monet Capital! We will be in touch within 24 hours. We look forward to partnering with you!</p></div></div>');
+          }
+          else{
+            alert(result);
+            $('#sign_form_id')[0].reset();
+            //console.log(result);
+          }
         }});
       });
       $('.uk-button.uk-button-primary.uk-flex-').click(function(){
@@ -48,6 +55,39 @@
               }
           });
       });
+
+      $(document).ready(function()
+      {
+          $('.uk-modal-dialog .uk-padding-large').hover(function(){
+              mouse_is_inside=true;
+          }, function(){
+              mouse_is_inside=false;
+          });
+
+          $("body").mouseup(function(){
+              if(! mouse_is_inside) {
+                //$('#psf-success-modal').removeClass('uk-open');
+                //$('#psf-success-modal').hide();
+                $('#psf-success-modal').remove();
+              }
+          });
+      });
+
+      $(document).ready(function()
+      {
+          $('.uk-modal-dialog .uk-padding-large').hover(function(){
+              mouse_is_inside=true;
+          }, function(){
+              mouse_is_inside=false;
+          });
+
+          $("body").mouseup(function(){
+              if(! mouse_is_inside) {
+                $('#msf-success-modal').remove();                
+              }
+          });
+      });
+
       $('.uk-background-default.uk-padding.uk-width-expand.uk-position-relative .uk-button.uk-button-default').click(function(){
         var how_much = $('.form-switcher.uk-switcher li:first-child h2').text();
         var how_soon = $('input[name="soonSelect"]:checked').val();
@@ -63,10 +103,16 @@
         var link = $('#sign_form_id').attr('action');
         var data = 'how_much=' + how_much + '&how_soon=' + how_soon + '&years_business=' + years_business + '&monthly_revenue=' + monthly_revenue + '&industry=' + industry + '&first_name=' + first_name + '&last_name=' + last_name + '&email_address=' + email_address + '&phone_number=' + phone_number + '&business_name=' + business_name;
         $.ajax({url: link, type: "POST", data: data, success: function(result){
-            alert(result);
-          //$('.uk-background-default.uk-padding.uk-width-expand.uk-position-relative form')[0].reset();
-            $('#msf-modal').removeClass('uk-open');
-            $('#msf-modal').hide();
+            if(result == 'success'){
+              $('#msf-modal').removeClass('uk-open');
+              $('#msf-modal').hide();
+              $('body').append('<div id="msf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Application Submitted</h2><p>Thank you for choosing Monet Capital! We will be in touch within 24 hours. Please check your email for a copy of your application.</p></div></div>');
+            }
+            else{
+              alert(result);
+              $('.uk-background-default.uk-padding.uk-width-expand.uk-position-relative form')[0].reset();
+              //console.log(result);
+            }
         }});
       });
     </script>
