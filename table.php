@@ -11,19 +11,25 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 }
+
+if(isset($_POST['date']))
+	$date = $_POST['date'];
+else
+	$date = date('m/d/Y');
+	
 $table = 'request';
 $result = array();
+
 if($table == 'request'){
-	$sql = "SELECT * FROM request";
+	$sql = "SELECT * FROM `request` WHERE `date` = '" . $date . "'";
 	$result = $conn->query($sql);
 }
-
 $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Table V02</title>
+	<title>Table</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -42,45 +48,31 @@ $conn->close();
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
-
 	<div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
-					<div class="table">
+					<form id="date_form" name="date_form" method="post" action="table.php">
+					<div style="height: 55px;">
+						<p style="float: left;"><input name="date" style="text-align: center; height: 50px; padding: 10px; background: yellowgreen;" type="text" id="datepicker" value="<?php echo $date;?>"></p>
+						<button id="export" data-export="export" style="height: 50px; padding: 10px; background: yellowgreen; float: right;">Export</button>
+					</div>
+					</form>
+					<div class="table" id="export_table">
 
 						<div class="row header">
-							<div class="cell">
-								First Name
-							</div>
-							<div class="cell">
-								Last Name
-							</div>
-							<div class="cell">
-								Email
-							</div>
-							<div class="cell">
-								Phone
-							</div>
-							<div class="cell">
-								Business Name
-							</div>
-							<div class="cell">
-								How Much?
-							</div>
-							<div class="cell">
-								How Soon?
-							</div>
-							<div class="cell">
-								Years in busienss
-							</div>
-							<div class="cell">
-								Monthly Revenue
-							</div>
-							<div class="cell">
-								Industry
-							</div>
+							<div class="cell">First Name</div>
+							<div class="cell">Name</div>
+							<div class="cell">Email</div>
+							<div class="cell">Phone</div>
+							<div class="cell">Business Name</div>
+							<div class="cell">How Much?</div>
+							<div class="cell">How Soon?</div>
+							<div class="cell">Years in busienss</div>
+							<div class="cell">Monthly Revenue</div>
+							<div class="cell">Industry</div>
 						</div>
 						<?php
 						 	if ($result->num_rows > 0) {
@@ -118,7 +110,7 @@ $conn->close();
 											<div class="cell" data-title="Industry">'
 												. $row['industry']
 											.'</div>
-											</div>';											
+											</div>';
 							    }
 							}
 						?>
@@ -126,8 +118,6 @@ $conn->close();
 			</div>
 		</div>
 	</div>
-
-
 
 
 <!--===============================================================================================-->
@@ -139,6 +129,28 @@ $conn->close();
 	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script>
+		$( function() {
+			$( "#datepicker" ).datepicker();
+		} );
+		$("#datepicker").datepicker({
+		  onSelect: function(dateText) {
+		    $('#date_form').submit();
+		  }
+		});
+	</script>
+
+	<script src="./jquery.tabletoCSV.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			$(function(){
+					$("#export").click(function(){
+							$("#export_table").tableToCSV();
+					});
+			});
+	</script>
 
 </body>
 </html>

@@ -88,12 +88,12 @@ if ($conn->connect_error) {
 }
 
 if($table == 'message')
-  $sql = "INSERT INTO " . $table . " (first_name, last_name, phone_number, email_address, business_name, message)
-  VALUES ('" . $first_name . "', '" . $last_name . "', '" . $phone_number . "', '" . $email_address. "', '" . $business_name . "', '" . $message . "')";
+  $sql = "INSERT INTO " . $table . " (first_name, last_name, phone_number, email_address, business_name, message, date)
+  VALUES ('" . $first_name . "', '" . $last_name . "', '" . $phone_number . "', '" . $email_address. "', '" . $business_name . "', '" . $message . "', '" . date("m/d/Y") . "')";
 
 if($table == 'request')
-  $sql = "INSERT INTO " . $table . " (first_name, last_name, phone_number, email_address, business_name, how_much, how_soon, years_business, monthly_revenue, industry)
-  VALUES ('" . $first_name . "', '" . $last_name . "', '" . $phone_number . "', '" . $email_address. "', '" . $business_name . "', '" . $how_much . "', '" . $how_soon. "', '" . $years_business. "', '" . $monthly_revenue. "', '" . $industry . "')";
+  $sql = "INSERT INTO " . $table . " (first_name, last_name, phone_number, email_address, business_name, how_much, how_soon, years_business, monthly_revenue, industry, date)
+  VALUES ('" . $first_name . "', '" . $last_name . "', '" . $phone_number . "', '" . $email_address. "', '" . $business_name . "', '" . $how_much . "', '" . $how_soon. "', '" . $years_business. "', '" . $monthly_revenue. "', '" . $industry . "', '" . date("m/d/Y") . "')";
 
 if ($conn->query($sql) === TRUE) {
     echo "success";
