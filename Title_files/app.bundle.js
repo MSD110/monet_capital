@@ -6684,7 +6684,7 @@
 		}()
 	}).call(this, r(34).setImmediate)
 }, function (e, t, r) {
-	e.exports = r.p + "./Title_files/monet-cap-logo.png"
+	e.exports = r.p + "./Title_files/logo.png"
 }, function (e, t) {
 	var r;
 	r = function () {
@@ -13464,7 +13464,7 @@
 					e.setState({
 						hero: {
 							hero_heading: "Your time is valuable.",
-							hero_body: "\u003Cp\u003EMonet Capital expedites business funding from $10,000 up to $2,000,000!\u003Cbr \/\u003E\nApply now and we\u2019ll have your business funded within 24 hours\u2026\u003C\/p\u003E\n",
+							hero_body: "\u003Cp\u003ESilverstone Funding expedites business funding from $10,000 up to $2,000,000!\u003Cbr \/\u003E\nApply now and we\u2019ll have your business funded within 24 hours\u2026\u003C\/p\u003E\n",
 							hero_image: "./Title_files/AdobeStock_211464298.jpg",
 							hero_footer_text: "We take care of the financial burden, so you can do what really matters."
 						}
@@ -13539,7 +13539,7 @@
 		}))), o.a.createElement("ul", {
 			className: "uk-navbar-nav uk-hidden@m"
 		}, o.a.createElement("li", null, o.a.createElement("a", {
-			href: "tel:1-800-377-5554"
+			href: "tel:1-800-216-8087"
 		}, o.a.createElement("i", {
 			className: "material-icons md-36 uk-text-primary"
 		}, "phone"))))), o.a.createElement("div", {
@@ -13563,10 +13563,10 @@
 			className: "uk-button uk-button-primary uk-border-rounded"
 		}, "Contact Us")), " "), o.a.createElement("li", null, " ", o.a.createElement("a", {
 			id: "contact",
-			href: "tel:1-800-377-5554"
+			href: "tel:1-800-216-8087"
 		}, o.a.createElement("i", {
 			className: "material-icons uk-margin-small-right uk-text-primary"
-		}, "phone"), "1-800-377-5554"), " ")), o.a.createElement("ul", {
+		}, "phone"), "1-800-216-8087"), " ")), o.a.createElement("ul", {
 			className: "uk-navbar-nav uk-hidden@m"
 		}, o.a.createElement("li", null, " ", o.a.createElement("a", {
 			href: "#",
@@ -13699,7 +13699,7 @@
 			"data-uk-img": !0
 		}), o.a.createElement("div", {
 			className: "uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-text-left"
-		}, o.a.createElement("p", null, '"', "Unlike traditional lenders, the people at Monet are extremely friendly and helpful. Plus, they specifically work with small businesses so their funding options are much more practical.", '"'), o.a.createElement("p", {
+		}, o.a.createElement("p", null, '"', "Unlike traditional lenders, the people at Silverstone are extremely friendly and helpful. Plus, they specifically work with small businesses so their funding options are much more practical.", '"'), o.a.createElement("p", {
 			className: "uk-text-right uk-position-bottom uk-text-uppercase uk-text-bold uk-padding-small"
 		}, "Ryan T.")))), o.a.createElement("li", {
 			className: "uk-text-center"
@@ -13712,7 +13712,7 @@
 			"data-uk-img": !0
 		}), o.a.createElement("div", {
 			className: "uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-text-left"
-		}, o.a.createElement("p", null, '"', "Monet Capital gave me more than a loan, they gave me a sense of security and hope for the future.", '"'), o.a.createElement("p", {
+		}, o.a.createElement("p", null, '"', "Silverstone Funding gave me more than a loan, they gave me a sense of security and hope for the future.", '"'), o.a.createElement("p", {
 			className: "uk-text-right uk-position-bottom uk-text-uppercase uk-text-bold uk-padding-small"
 		}, "Claire E.")))), o.a.createElement("li", {
 			className: "uk-text-center"
@@ -13804,7 +13804,7 @@
 				key: "componentDidMount",
 				value: function () {
 					var e = this;
-					var data = [{"highlight_heading":"Faster funded deals","highlight_body":"Make more commission while we fund the deals."},{"highlight_heading":"Make more with Monet","highlight_body":"We've funded thousands of cash advances. Even when others turned them down, we found a way so our partners could make more money."},{"highlight_heading":"Experienced partners","highlight_body":"We offer financial experience and expertise\u00a0to help you close more deals. Stop settling for partners who don't value your efforts."},{"highlight_heading":"Close deals fast","highlight_body":"We work effectively and efficiently, so our deals are closed fast. You'll get the money\u00a0\nyou deserve right away."}]
+					var data = [{"highlight_heading":"Faster funded deals","highlight_body":"Make more commission while we fund the deals."},{"highlight_heading":"Make more with Silverstone","highlight_body":"We've funded thousands of cash advances. Even when others turned them down, we found a way so our partners could make more money."},{"highlight_heading":"Experienced partners","highlight_body":"We offer financial experience and expertise\u00a0to help you close more deals. Stop settling for partners who don't value your efforts."},{"highlight_heading":"Close deals fast","highlight_body":"We work effectively and efficiently, so our deals are closed fast. You'll get the money\u00a0\nyou deserve right away."}]
 					var r = data.map(function (d) {
 						return {
 							highlightHeading: d.highlight_heading,
@@ -14042,7 +14042,7 @@
 				key: "componentDidMount",
 				value: function () {
 					var e = this;
-					var data = [{"accordion_item_heading":"What we do","accordion_item_body":"<p>Monet Capital supports business owners throughout the country. Our mission is simple: to assist clients on acquiring working capital that will solve cash flow problems and open up new opportunities. We\u2019ll work hard to understand all aspects of your business, present you with several funding options, and find the one that\u2019s right for you.<\/p>"},{"accordion_item_heading":"Why choose us","accordion_item_body":"<p>While most banks are denying small businesses, we at Monet are excited to focus on small business lending. We understand no one has a perfect history so we look towards your business\u2019 future, not its past. Additionally, we know you don\u2019t have time to wait for funding. Therefore, with a signed application and three months of bank statements, you\u2019ll be presented with a variety of funding options within a couple hours. Once the offer is accepted, the capital will be wired to your account within one day.\u200b \u00a0<\/p>"},{"accordion_item_heading":"Who we are","accordion_item_body":"<p>The founders of Monet Capital are financial services professionals who have vast experience in the business development industry. As direct lenders who believe that our clients are part of the family, we treat everyone with the utmost respect and confidentiality. Working together, we will find a funding option that will allow you to continue to grow your business and eliminate barriers. We encourage you to explore our website, give us a call, and become a part of the family. \u00a0<\/p>"},{"accordion_item_heading":"Security and Privacy","accordion_item_body":"<p>Monet Capital takes appropriate and reasonable security measures to help safeguard your personal and sensitive information. The information you enter into this website is protected using industry-compliant encryption technology, keeping your information safe from unauthorized access, use, modification and disclosure.\u00a0<br \/><br \/>\nMonet Capital is strongly committed to respecting the privacy rights of its users. We use the information you provide to us through this site to deliver the products and services you request on this site, provide you with customer support, verify or review your application information to determine whether it meets eligibility requirements, communicate with you by email, postal mail, telephone and\/or mobile devices about products or services that may be of interest to you from us. \u00a0 \u00a0 \u00a0<\/p>"}]
+					var data = [{"accordion_item_heading":"What we do","accordion_item_body":"<p>Silverstone Funding supports business owners throughout the country. Our mission is simple: to assist clients on acquiring working capital that will solve cash flow problems and open up new opportunities. We\u2019ll work hard to understand all aspects of your business, present you with several funding options, and find the one that\u2019s right for you.<\/p>"},{"accordion_item_heading":"Why choose us","accordion_item_body":"<p>While most banks are denying small businesses, we at Silverstone are excited to focus on small business lending. We understand no one has a perfect history so we look towards your business\u2019 future, not its past. Additionally, we know you don\u2019t have time to wait for funding. Therefore, with a signed application and three months of bank statements, you\u2019ll be presented with a variety of funding options within a couple hours. Once the offer is accepted, the capital will be wired to your account within one day.\u200b \u00a0<\/p>"},{"accordion_item_heading":"Who we are","accordion_item_body":"<p>The founders of Silverstone Funding are financial services professionals who have vast experience in the business development industry. As direct lenders who believe that our clients are part of the family, we treat everyone with the utmost respect and confidentiality. Working together, we will find a funding option that will allow you to continue to grow your business and eliminate barriers. We encourage you to explore our website, give us a call, and become a part of the family. \u00a0<\/p>"},{"accordion_item_heading":"Security and Privacy","accordion_item_body":"<p>Silverstone Funding takes appropriate and reasonable security measures to help safeguard your personal and sensitive information. The information you enter into this website is protected using industry-compliant encryption technology, keeping your information safe from unauthorized access, use, modification and disclosure.\u00a0<br \/><br \/>\nSilverstone Funding is strongly committed to respecting the privacy rights of its users. We use the information you provide to us through this site to deliver the products and services you request on this site, provide you with customer support, verify or review your application information to determine whether it meets eligibility requirements, communicate with you by email, postal mail, telephone and\/or mobile devices about products or services that may be of interest to you from us. \u00a0 \u00a0 \u00a0<\/p>"}]
 					var r = data.map(function (d) {
 						return {
 							heading: d.accordion_item_heading,
@@ -14086,14 +14086,14 @@
 			className: "footer uk-text-center"
 		}, o.a.createElement("ul", {
 			className: "footer-detail uk-margin-medium-bottom"
-		}, o.a.createElement("li", null, "© 2019 Monet Capital"), o.a.createElement("li", null, "81 Willoughby St, Brooklyn, NY 11201"), o.a.createElement("li", null, "info@monetcap.com"), o.a.createElement("li", null, o.a.createElement("img", {
+		}, o.a.createElement("li", null, "© 2019 Silverstone Funding"), o.a.createElement("li", null, "81 Willoughby St, Brooklyn, NY 11201"), o.a.createElement("li", null, "info@silverstonefunding.co"), o.a.createElement("li", null, o.a.createElement("img", {
 			"data-src": Ue.a,
 			className: "uk-width-small",
 			alt: "",
 			"data-uk-img": !0
 		}))), o.a.createElement("p", {
 			className: "footer-disclaimer"
-		}, "Monet Capital is a free, no obligation financial service, connecting prospective borrowers with prospective lenders for business funding.")),
+		}, "Silverstone Funding is a free, no obligation financial service, connecting prospective borrowers with prospective lenders for business funding.")),
 		He = o.a.createElement("div", {
 			className: "uk-background-primary uk-padding-large uk-text-center"
 		}, o.a.createElement("button", {
@@ -14102,7 +14102,7 @@
 			"data-uk-close": !0
 		}), o.a.createElement("span", {
 			className: "uk-text-uppercase uk-text-large uk-light uk-margin-bottom"
-		}, "Make more with monet"), o.a.createElement("form", {
+		}, "Make more with Silverstone"), o.a.createElement("form", {
 			className: "uk-grid-small uk-text-small uk-margin-top",
 			action: "model.php",
 			method: "post",

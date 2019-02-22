@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
 
-        <title>Development</title>
+        <title>Silverstone Funding</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Material design icons imported for regular usage. -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/Title_files/emo.png"/>
 
     </head>
 
@@ -23,7 +24,7 @@
           if(result == 'success'){
             $('#partners-apply-modal').removeClass('uk-open');
             $('#partners-apply-modal').hide();
-            $('body').append('<div id="psf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Submitted</h2><p>Thank you for choosing Monet Capital! We will be in touch within 24 hours. We look forward to partnering with you!</p></div></div>');
+            $('body').append('<div id="psf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Submitted</h2><p>Thank you for choosing Silverstone Funding! We will be in touch within 24 hours. We look forward to partnering with you!</p></div></div>');            
           }
           else{
             alert(result);
@@ -83,7 +84,7 @@
 
           $("body").mouseup(function(){
               if(! mouse_is_inside) {
-                $('#msf-success-modal').remove();                
+                $('#msf-success-modal').remove();
               }
           });
       });
@@ -106,7 +107,7 @@
             if(result == 'success'){
               $('#msf-modal').removeClass('uk-open');
               $('#msf-modal').hide();
-              $('body').append('<div id="msf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Application Submitted</h2><p>Thank you for choosing Monet Capital! We will be in touch within 24 hours. Please check your email for a copy of your application.</p></div></div>');
+              $('body').append('<div id="msf-success-modal" data-uk-modal="true" class="uk-modal uk-open" style="display: block;"><div class="uk-modal-dialog uk-padding-large"><h2 class="monet-text-gold">Application Submitted</h2><p>Thank you for choosing Silverstone Funding! We will be in touch within 24 hours. Please check your email for a copy of your application.</p></div></div>');
             }
             else{
               alert(result);
